@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.1",
 	"appid": "wxe9631cbb13086f89",
-	"projectname": "webChat",
+	"projectname": "wechat_demo",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

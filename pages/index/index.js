@@ -70,8 +70,15 @@ Page({
   },
 
   jumpToHome:function(){
-    wx.navigateTo({
-      url: '../home/home',
+    console.log('click');
+    // wx.navigateTo({
+    //   url: '../second/second',
+    // })
+    wx.switchTab({
+      url: '../second/second',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
     })
   }
 })

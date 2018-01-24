@@ -1,1 +1,21 @@
-{}
+{
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "red",
+    "borderStyle": "#000",
+    "list": [
+      {
+        "pagePath": "pages/second",
+        "text": "首页",
+        "iconPath": "home",
+        "selectedIconPath": "home-actived"
+      },
+      {
+        "pagePath": "pages/three",
+        "text": "我的",
+        "iconPath": "images/nav_sort",
+        "selectedIconPath": "images/nav_sort_on"
+      }
+    ]
+  }
+}

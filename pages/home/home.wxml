@@ -1,6 +1,6 @@
 <view>
 <swiper indicator-dots="{{has_indicator}}" indicator-color="{{indicator_color}}" autoplay="{{autoplay}}" interval="{{interval}}">
-    <block wx:for="{{books}}" wx:for-index="index">
+    <block wx:for="{{books}}" wx:for-index="index" wx:key="unique">
         <swiper-item>
           <image src="{{item.cover.url}}" mode="aspectFill"/>
         </swiper-item>
