@@ -1,0 +1,28 @@
+.map{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.location{
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.jingdu{
+  width: 50%;
+  height: 20px;
+  display: flex;
+}
+
+.weidu{
+  width: 50%;
+  height: 20px;
+  display: flex;
+}
+
+.content{
+
+  color: #EEC591;
+}

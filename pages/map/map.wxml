@@ -1,0 +1,13 @@
+<button type="primary" bindtap="showMap">获取位置</button>
+
+<view class='location' style='flex-direction:row;'>
+  <view class='jingdu' style='flex-direction:row;'>
+    <view>精度：</view>
+    <text class='content'>{{jingdu_content}}</text>
+  </view>
+  <view class='weidu' style='flex-direction:row;'>
+    <view>纬度：</view>
+    <text class='content'>{{weidu_content}}</text>
+  </view>
+</view>
+<map id="myMap" show-location class='map'/>

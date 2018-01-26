@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/home/home",
-    "pages/second/second"
+    "pages/second/second",
+    "pages/map/map"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,7 +14,7 @@
   },
   "tabBar": {
     "color": "#000",
-    "selectedColor": "red",
+    "selectedColor": "#ff0000",
     "borderStyle": "#000",
     "list": [
       {
@@ -23,8 +24,8 @@
         "selectedIconPath": "images/home-actived.png"
       },
       {
-        "pagePath": "pages/second/second",
-        "text": "我的",
+        "pagePath": "pages/map/map",
+        "text": "地图",
         "iconPath": "images/nav_sort.png",
         "selectedIconPath": "images/nav_sort_on.png"
       }
