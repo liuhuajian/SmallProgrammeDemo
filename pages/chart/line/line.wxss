@@ -1,0 +1,6 @@
+/* pages/chart/bing/bing.wxss */
+
+.canvas {
+  position: relative;
+  width: 100%;
+}

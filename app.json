@@ -1,10 +1,11 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
     "pages/home/home",
-    "pages/second/second",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/chart/bing/bing",
+    "pages/chart/column/column",
+    "pages/chart/line/line"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -18,7 +19,7 @@
     "borderStyle": "#000",
     "list": [
       {
-        "pagePath": "pages/second/second",
+        "pagePath": "pages/home/home",
         "text": "首页",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home-actived.png"

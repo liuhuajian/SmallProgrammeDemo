@@ -1,22 +1,51 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+    slider: [
+      { picUrl: 'http://y.gtimg.cn/music/photo_new/T003R720x288M000000rVobR3xG73f.jpg' },
+      { picUrl: 'http://y.gtimg.cn/music/photo_new/T003R720x288M000000j6Tax0WLWhD.jpg' },
+      { picUrl: 'http://y.gtimg.cn/music/photo_new/T003R720x288M000000a4LLK2VXxvj.jpg' },
+    ],
+    swiperCurrent: 0,
+  },
+
+  swiperChange: function (e) {
+    this.setData({
+      swiperCurrent: e.detail.current
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+      // this.showChart()
   },
+
+  goto_page_bing:function(){
+    wx.navigateTo({
+      url: '../chart/bing/bing',
+    })
+  },
+
+  goto_page_line: function () {
+    wx.navigateTo({
+      url: '../chart/line/line',
+    })
+  },
+
+  goto_page_column: function () {
+    wx.navigateTo({
+      url: '../chart/column/column',
+    })
+  },
+
+  touchHandler: function (e) {
+    console.log(pieChart.getCurrentDataIndex(e));
+  }, 
 
   /**
    * 生命周期函数--监听页面初次渲染完成

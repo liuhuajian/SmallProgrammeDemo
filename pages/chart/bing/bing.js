@@ -1,28 +1,54 @@
+var wxCharts = require('../../../utils/wxcharts.js');
+var thisChart = null;
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    slider: [
-      { picUrl: 'http://y.gtimg.cn/music/photo_new/T003R720x288M000000rVobR3xG73f.jpg' },
-      { picUrl: 'http://y.gtimg.cn/music/photo_new/T003R720x288M000000j6Tax0WLWhD.jpg' },
-      { picUrl: 'http://y.gtimg.cn/music/photo_new/T003R720x288M000000a4LLK2VXxvj.jpg' },
-    ],
-    swiperCurrent: 0,
-  },
-
-  swiperChange: function (e) {
-    this.setData({
-      swiperCurrent: e.detail.current
-    })
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    this.showChartBing()
+  },
+
+  showChartBing() {
+    var windowWidth = 320;
+    try {
+      var res = wx.getSystemInfoSync();
+      windowWidth = res.windowWidth;
+
+    } catch (e) {
+      console.error('getSystemInfoSync failed!');
+    }
+    console.log('windowWidth-->' + windowWidth);
+    thisChart = new wxCharts({
+      animation: true,
+      canvasId: 'thisCanvas',
+      type: 'pie',
+      series: [{
+        name: '电影',
+        data: 100,
+        color: 'yellow',
+      }, {
+        name: '音乐',
+        data: 35,
+      }, {
+        name: '小说',
+        data: 78,
+      }, {
+        name: '戏剧',
+        data: 63,
+      }],
+      width: windowWidth,
+      height: 400,
+      dataLabel: true,
+    });
   },
 
   /**
