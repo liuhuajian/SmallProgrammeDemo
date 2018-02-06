@@ -5,7 +5,8 @@
     "pages/map/map",
     "pages/chart/bing/bing",
     "pages/chart/column/column",
-    "pages/chart/line/line"
+    "pages/chart/line/line",
+    "pages/test/test"
   ],
   "window":{
     "backgroundTextStyle":"light",

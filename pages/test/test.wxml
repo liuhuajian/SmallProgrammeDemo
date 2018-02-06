@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="top_container">
+        <text class='title'>个人中心</text>
+
+        <view style="display:flex;margin-top:20px;">
+            <image src="../../images/book_map_icon.png" class='imag_head'></image>
+            <view class="top_content_container">
+                <text>未登录</text>
+                <text style="margin-top:10px;">信用值</text>
+            </view>
+
+            <view class='update_container'>
+                <image src="../../images/home.png" class="update_icon"></image>
+                <text style="color:#ffffff;font-size:15px;margin-left:5px">修改</text>
+            </view>
+        </view>
+    </view>
+</view>

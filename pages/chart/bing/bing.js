@@ -14,7 +14,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.showChartBing()
+    this.showChartBing();
+    
   },
 
   showChartBing() {
@@ -62,7 +63,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    var pages = getCurrentPages();
+    console.log(pages);
+    // console.log('page-->' + pages.length)
+    // for (var i = 0; i < pages.length; i++) {
+    //   console.log('page-->' + pages[i])
+    // }
+    // for (page in pages) {
+    //   console.log('page-->' + page)
+    // }
   },
 
   /**

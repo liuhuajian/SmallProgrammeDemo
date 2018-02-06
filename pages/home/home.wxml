@@ -11,6 +11,7 @@
     <view bindtap="goto_page_bing" class='chart_item'>饼图</view>
     <view bindtap="goto_page_line" class='chart_item'>线图</view>
     <view bindtap="goto_page_column" class='chart_item'>柱状图</view>
+    <view bindtap="goto_page_test" class='chart_item'>Test</view>
   </view>
 
 </view>

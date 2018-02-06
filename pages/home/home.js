@@ -1,3 +1,5 @@
+var user = 'hahaha';
+
 Page({
 
   /**
@@ -22,7 +24,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      // this.showChart()
+    var o = {
+      user: "追梦子",
+      fn: function () {
+        console.log('function-->'+this.user);  //追梦子
+      }
+    }
+    var k = {
+      user: "小畜生",
+      fn: function () {
+        console.log('function-->' + this.user);  //小畜生
+      }
+    }
+    var oo = o.fn;
+    oo.call(o);
+    // oo();
+    // let pn = o.fn();
+    // let kn = k.fn();
   },
 
   goto_page_bing:function(){
@@ -40,6 +58,12 @@ Page({
   goto_page_column: function () {
     wx.navigateTo({
       url: '../chart/column/column',
+    })
+  },
+
+  goto_page_test:function(){
+    wx.navigateTo({
+      url: '../test/test',
     })
   },
 
